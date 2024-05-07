@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { coreModule } from './core';
+import { coreModule } from './core/core.module';
 import { DynamicControlsModule } from './dynamic-controls/dynamic-controls.module';
 
 @Component({
