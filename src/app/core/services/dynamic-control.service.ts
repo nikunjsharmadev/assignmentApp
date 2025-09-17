@@ -6,7 +6,7 @@ import { DynamicControl } from "../models";
 // Service to get dynamic controls
 @Injectable()
 export class DynamicControlService {
-    private apiUrl: string = '/assets/backend/data/dynamic-control.json';
+    private apiUrl: string = 'assets/backend/data/dynamic-control.json';
     constructor(private httpClient: HttpClient) {}
     getDynamicControls(): Observable<DynamicControl[]> {
         return this.httpClient.get<DynamicControl[]>(this.apiUrl);
